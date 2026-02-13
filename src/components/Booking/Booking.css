@@ -1,0 +1,82 @@
+.booking {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.booking-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-bg);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.booking-container .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+.right h3{
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-bg);
+    letter-spacing: 2px;
+}
+.left input{
+    width: 100%;
+}
+
+.booking-container .city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.booking-container .city p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-bg);
+    letter-spacing: 2px;
+}
+
+.booking-container .passengers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.booking-container .passengers p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-bg);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}

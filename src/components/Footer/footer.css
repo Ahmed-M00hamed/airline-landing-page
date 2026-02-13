@@ -1,0 +1,110 @@
+footer{
+    width: 100%;
+    background: #bed0d6;
+    margin-top: 2rem;
+}
+
+footer .footer-content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+footer .footer-content .logo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #000;
+}
+
+footer .footer-content .logo a{
+
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+footer .footer-content .logo p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+footer .footer-content .company{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    color: #000;
+}
+footer .footer-content h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+footer .footer-content .company a,
+footer .footer-content .social a{
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1.2px;
+}
+footer .footer-content .company a:hover,
+footer .footer-content .social a:hover{
+    color: #1e90ff;
+    scale: 1.1;
+}
+
+
+footer .footer-content .social{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #000;
+    margin-bottom: 5rem;
+}
+
+footer .footer-content .social .social-logos{
+    display: flex;
+    gap: 2rem;
+}
+
+footer .copy{
+    color: #000;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 1rem;
+}
+@media (max-width:1024px) {
+    footer .footer-content .logo{
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer .footer-content .company{
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer-content .social{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .social-logos{
+        justify-content: center;
+        margin-top: 1.2rem;
+    }
+
+
+}
+
