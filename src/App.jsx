@@ -7,7 +7,7 @@ import Booking from "./components/Booking/Booking";
 import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Loader from "./components/Loader/loader";
+import Loader from "./components/Loader/Loader";
 
 import { useRef } from "react";
 
