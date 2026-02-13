@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Hero from "./components/hero/Hero";
@@ -6,30 +7,50 @@ import Booking from "./components/Booking/Booking";
 import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-
+import Loader from "./components/Loader/loader";
 
 import { useRef } from "react";
 
 function Home() {
-    const destinationsRef = useRef(null);
+  const destinationsRef = useRef(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const handleLoad = () => setLoading(false);
+
+    if (document.readyState === "complete") {
+      setLoading(false);
+    } else {
+      window.addEventListener("load", handleLoad);
+      return () => window.removeEventListener("load", handleLoad);
+    }
+  }, []);
+
   return (
     <>
-      <Hero scrollToDestinations={() => {
-        destinationsRef.current?.scrollIntoView({
-          behavior: "smooth"
-        });
-      }} />
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="main-content">
 
-      <Destinations destinationsRef={destinationsRef} />
+          <Hero scrollToDestinations={() => {
+            destinationsRef.current?.scrollIntoView({
+              behavior: "smooth"
+            });
+          }} />
 
-      <Services />
-      <Contact />
-      <Footer />
-
-
+          <Destinations destinationsRef={destinationsRef} />
+          <Services />
+          <Contact />
+          <Footer />
+        </div>
+      )}
     </>
   );
 }
+
+
+
 
 function App() {
   return (
