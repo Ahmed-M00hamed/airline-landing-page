@@ -1,6 +1,6 @@
 import React from "react";
 import { Plane } from 'lucide-react';
-import "./Loader.css";
+import "./loader.css";
 
 export default function Loader() {
     return (
