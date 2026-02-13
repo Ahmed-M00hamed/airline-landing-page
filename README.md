@@ -8,7 +8,7 @@
 
 ## 🚀 Live Demo
 
-🔗 <a href="https://airline-landing-page-drab.vercel.app" target="_blank" rel="noopener noreferrer">
+<a href="https://airline-landing-page-drab.vercel.app" target="_blank" rel="noopener noreferrer">
 🚀 View Live Demo
 </a>
 
