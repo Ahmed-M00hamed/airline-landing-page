@@ -24,6 +24,7 @@
 .services-container .bottom-section .service {
   width: 25%;
   display: flex;
+  align-items: center;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -52,32 +53,33 @@
 }
 
 @media (max-width: 1370px) {
-  .services-container .bottom-section .service{
+  .services-container .bottom-section .service {
     width: 40%;
     justify-content: center;
     gap: 3rem;
   }
 }
 @media (max-width: 1045px) {
-  .services-container .bottom-section .service{
+  .services-container .bottom-section .service {
     width: 60%;
     justify-content: start;
   }
 }
 @media (max-width: 800px) {
-  .services-container .top-section h2{
+  .services-container .top-section h2 {
     font-size: 1.7rem;
     letter-spacing: normal;
     margin: 2rem 0;
   }
-  .services-container .bottom-section .service{
+  .services-container .bottom-section .service {
     width: 100%;
     padding: 0.5rem 1rem;
+    gap: 1rem;
   }
-  .services-container .bottom-section .service h3{
+  .services-container .bottom-section .service h3 {
     font-size: 1.2rem;
   }
-  .services-container .bottom-section .service p{
+  .services-container .bottom-section .service p {
     font-size: 1rem;
   }
 }

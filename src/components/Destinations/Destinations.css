@@ -73,7 +73,11 @@
     }
 @media (max-width: 700px) {
         .Destinations-item{
-            width: 100%;
+            width: 90%;
+        }
+        .Destinations-container{
+            align-items: center;
+            justify-content: center;
         }
         .Destinations .top-section h2{
             font-size: 1.9rem;

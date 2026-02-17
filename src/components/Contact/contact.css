@@ -79,6 +79,12 @@ button[type="submit"] {
     .row {
         flex-direction: column;
     }
+    .contact-form {
+        padding: 0;
+    }
+    .contact-info {
+        width: 100%;
+    }
 
     .input-group {
         width: 100%;
